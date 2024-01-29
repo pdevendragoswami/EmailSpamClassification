@@ -39,8 +39,14 @@ def index():
             predict_pipeline_obj = PredictionPipeline()
 
             pred_value = predict_pipeline_obj.predict_value(data_df,config=DataTransformationConfig)
+
+            if pred_value[0] == 0:
+                 output = "Not a spam"
+            else:
+                 output = "Spam"
+                 
         
-            return render_template('results.html', prediction = (pred_value[0]))
+            return render_template('results.html', prediction = (output))
 
         except Exception as e:
             print('The Exception message is: ',e)

@@ -1,6 +1,7 @@
 from EmailSpamClassification.config.configuration import ConfigurationManager
 from EmailSpamClassification.components.stage_01_data_ingestion import DataIngestion
 from EmailSpamClassification import logger
+from tqdm import tqdm
 
 
 STAGE_NAME = "Data Ingestion stage"

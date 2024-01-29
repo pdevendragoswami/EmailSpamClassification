@@ -2,7 +2,7 @@ from EmailSpamClassification.config.configuration import ConfigurationManager
 from EmailSpamClassification.components.stage_03_data_transformation import DataTransformation
 from EmailSpamClassification import logger
 from pathlib import Path
-
+from tqdm import tqdm
 
 
 STAGE_NAME = "Data Transformation stage"

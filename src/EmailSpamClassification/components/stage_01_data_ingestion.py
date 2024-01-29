@@ -2,6 +2,7 @@ import os
 import urllib.request as request
 import zipfile
 from pathlib import Path
+from tqdm import tqdm
 from EmailSpamClassification import logger
 from EmailSpamClassification.utils.utils import get_size
 from EmailSpamClassification.entity.config_entity import DataIngestionConfig

@@ -1,6 +1,7 @@
 import os
 import joblib
 import pandas as pd
+from tqdm import tqdm
 from sklearn.ensemble import RandomForestClassifier
 from EmailSpamClassification import logger
 from EmailSpamClassification.entity.config_entity import ModelTrainerConfig
@@ -25,7 +26,7 @@ class ModelTrainer:
         test_y = test_data[[self.config.target_column]]
 
 
-        rfc = RandomForestClassifier(random_state=42)
+        rfc = RandomForestClassifier(random_state=self.config.random_state)
         rfc.fit(train_x, train_y)
 
         joblib.dump(rfc, os.path.join(self.config.root_dir, self.config.model_name))

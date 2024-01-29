@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from tqdm import tqdm
 from EmailSpamClassification import logger
 from EmailSpamClassification.entity.config_entity import DataValidationConfig
 from EmailSpamClassification.config.configuration import ConfigurationManager

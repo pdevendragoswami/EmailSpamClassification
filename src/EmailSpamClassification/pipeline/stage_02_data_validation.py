@@ -1,6 +1,7 @@
 from EmailSpamClassification.config.configuration import ConfigurationManager
 from EmailSpamClassification.components.stage_02_data_validation import DataValidation
 from EmailSpamClassification import logger
+from tqdm import tqdm
 
 
 STAGE_NAME = "Data Validation stage"

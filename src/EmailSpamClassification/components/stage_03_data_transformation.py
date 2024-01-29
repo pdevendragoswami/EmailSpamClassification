@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 from sklearn.model_selection import train_test_split
 from EmailSpamClassification import logger
 from EmailSpamClassification.entity.config_entity import DataTransformationConfig
@@ -12,6 +13,7 @@ nltk.download('stopwords')
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer
 import joblib
+from tqdm import tqdm
 
 class DataTransformation:
     def __init__(self, config: DataTransformationConfig):

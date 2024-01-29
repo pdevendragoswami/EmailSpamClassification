@@ -2,6 +2,7 @@ import joblib
 import numpy as np
 import pandas as pd
 from pathlib import Path
+from tqdm import tqdm
 from sklearn.feature_extraction.text import CountVectorizer
 from EmailSpamClassification.components.stage_03_data_transformation import DataTransformation,DataTransformationConfig
 

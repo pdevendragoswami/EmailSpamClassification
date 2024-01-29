@@ -1,7 +1,7 @@
 from EmailSpamClassification.config.configuration import ConfigurationManager
 from EmailSpamClassification.components.stage_04_model_trainer import ModelTrainer
 from EmailSpamClassification import logger
-
+from tqdm import tqdm
 
 STAGE_NAME = "Model Trainer stage"
 

@@ -1,3 +1,4 @@
+from tqdm import tqdm
 from EmailSpamClassification import logger
 from EmailSpamClassification.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from EmailSpamClassification.pipeline.stage_02_data_validation import DataValidationTrainingPipeline

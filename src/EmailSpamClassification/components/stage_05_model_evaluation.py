@@ -4,6 +4,7 @@ import pandas as pd
 import joblib
 from urllib.parse import urlparse
 from pathlib import Path
+from tqdm import tqdm
 from sklearn.metrics import classification_report,accuracy_score,confusion_matrix
 from EmailSpamClassification.utils.utils import save_json
 from EmailSpamClassification.entity.config_entity import ModelEvaluationConfig
@@ -32,9 +33,9 @@ class ModelEvaluation:
         test_x = test_data.drop([self.config.target_column], axis=1)
         test_y = test_data[[self.config.target_column]]
         
-        predicted_qualities = model.predict(test_x)
+        predicted_class = model.predict(test_x)
 
-        (accuracy) = self.eval_metrics(test_y, predicted_qualities)
+        (accuracy) = self.eval_metrics(test_y, predicted_class)
         
         # Saving metrics as local
         scores = {"Accuracy": accuracy,}# "Confusion_matrix": cf_matrix, "Classification_Report": cls_report}
