@@ -1,0 +1,7 @@
+COLUMNS:
+  text: object
+  spam: int64
+
+TARGET_COLUMN:
+  name: spam
+  
