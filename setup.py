@@ -8,8 +8,8 @@ __version__ = "0.0.0"
 
 REPO_NAME = "EmailSpamClassification"
 AUTHOR_USER_NAME = "DevendraGoswami"
-SRC_REPO = "TextSummarizer"
-AUTHOR_EMAIL = "EmailSpamClassification"
+SRC_REPO = "EmailSpamClassification"
+AUTHOR_EMAIL = "pdevendragoswami@gmail.com"
 
 
 

@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/EmailSpamClassification.egg-info/PKG-INFO
+src/EmailSpamClassification.egg-info/SOURCES.txt
+src/EmailSpamClassification.egg-info/dependency_links.txt
+src/EmailSpamClassification.egg-info/top_level.txt

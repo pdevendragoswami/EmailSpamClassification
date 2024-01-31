@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
-Name: TextSummarizer
+Name: EmailSpamClassification
 Version: 0.0.0
 Summary: A small python package for NLP app
 Home-page: https://github.com/DevendraGoswami/EmailSpamClassification
 Author: DevendraGoswami
-Author-email: EmailSpamClassification
+Author-email: pdevendragoswami@gmail.com
 Project-URL: Bug Tracker, https://github.com/DevendraGoswami/EmailSpamClassification/issues
