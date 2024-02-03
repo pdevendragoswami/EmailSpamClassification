@@ -1,7 +1,8 @@
 # Email Spam Classification
 ## How to run the app?
 
-''' bash Step1: conda create -n EmailSpamClassification python=3.8 -y '''
+''' bash 
+Step1: conda create -n EmailSpamClassification python=3.8 -y '''
 
 Step2: conda activate EmailSpamClassification
 
