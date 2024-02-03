@@ -1,4 +1,5 @@
-# How to run the app?
+# Email Spam Classification
+## How to run the app?
 
 Step1: conda create -n EmailSpamClassification python=3.8 -y 
 
@@ -10,7 +11,7 @@ Step4: python app.py
 
 Step5: Now open up your local host 0.0.0.0:8080
 
-# Workflows:
+## Workflows:
 
 1. Create a folder for your project
 2. Create environment for your project - conda create -n EmailSpamClassification python=3.8 -y
